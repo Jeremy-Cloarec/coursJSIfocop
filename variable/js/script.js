@@ -65,7 +65,6 @@ console.log(total);
 console.log(typeof total);
 
 //constante
-
 const prenom = "Bob"; //Ne peut pas être modifié
 console.log(prenom);
 
