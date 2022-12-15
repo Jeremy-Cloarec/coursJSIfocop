@@ -61,17 +61,61 @@ console.log("Majeur ou tenue correct ==>"+(majeur||tenueCorrectBis))//true
 //Faire le calcul de l'age à partir de cette année de naissance
 //Selon la rpse : - tu es un ado (10-20ans), -tu es un adulte (20-60), tu es à la retraite (+60)
 
-let ageNaissance = prompt("Quel est votre année de naissance ?")
+//let ageNaissance = prompt("Quel est votre année de naissance ?")
+let ageNaissance = 1990
 let anneeEnCours = 2022
 let  ageUtilisateur = anneeEnCours-ageNaissance
 
-if ((ageUtilisateur >=10)&&(ageUtilisateur<20)){
+if (ageUtilisateur >=10 && ageUtilisateur<20){
     console.log("Vous êtes ado")
-}else if((ageUtilisateur>=20)&&(ageUtilisateur<60)){
-    console.log("Vous êtes adulte")
+}else if(ageUtilisateur>=20 && ageUtilisateur<60){
+    console.log("Vous êtes adulte vous avez "+ageUtilisateur+" ans")
 }else if(ageUtilisateur>=60){
-    console.log("Vous êtes à la retraite")
+    console.log("Vous êtes à la retraite vous avez "+ageUtilisateur+" ans")
 }else{
-    console.log("Vous êtes un enfant")
+    console.log("Vous êtes un enfant vous avez "+ageUtilisateur+" ans")
 }
 
+
+//SWITCH
+
+//let panier = prompt("Choississez un fruit ou légume parmi : tomate, courgette, carotte")
+let panier= "courgette"
+panier=panier.toLowerCase()//permet de transformer le texte en minuscule. 
+
+
+switch(panier){
+    case"tomate":
+        console.log("Vous avez choisi une tomate")
+        break
+    case"courgette":
+        console.log("Vous avez choisi une courgette")
+        break;
+    case "carotte":
+        console.log("Vous avez choisi une carotte")
+        break;
+    default:
+        console.log("Veuillez faire un choix dans la liste")
+}
+
+//EXO
+//choix d'une couleurBis : rouge/jaune/bleu
+//selon le choix de l'utilisateur on lui dira si bleu = tu es de bonne humeur/ si jaune = humeur moyenne, si rouge = mauvaise humeur. 
+
+
+let couleurBis = prompt("Choississez une couleur entre bleu, jaune et rouge")
+couleurBis=couleurBis.toLocaleLowerCase()
+
+switch(couleurBis){
+    case"bleu":
+        console.log("Vous êtes de bonne humeur")
+        break
+    case"jaune":
+        console.log("Vous êtes d'humeur moyenne")
+        break
+    case "rouge":
+        console.log("Vous êtes de mauvaise humeur")
+        break
+    default :
+        console.log("Veuillez choisir une couleur parmi la liste proposée")
+}
