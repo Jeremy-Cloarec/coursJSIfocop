@@ -1,0 +1,47 @@
+
+*{
+    margin: 0;
+}
+body{
+    background-color: rgb(6, 8, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    padding : 0 20px;
+}
+header{
+    background-image: url(img/hd-wallpaper-g4a49e4585_1280.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height:200px;
+
+}
+    
+nav{
+    display: flex;
+    
+    align-items: center;
+}
+
+nav a{
+    padding:0 15px;
+}
+
+header img{
+    width: 100%;
+}
+
+h2{
+    margin:20px 0;
+}
+
+

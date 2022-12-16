@@ -57,6 +57,7 @@ console.log("Majeur ou tenue correct ==>"+(majeur||tenueCorrect))//true
 console.log("Majeur ou tenue correct ==>"+(majeur||tenueCorrectBis))//true
 
 //EXO
+
 //Demander l'année de naissance d'une personne (prompt)
 //Faire le calcul de l'age à partir de cette année de naissance
 //Selon la rpse : - tu es un ado (10-20ans), -tu es un adulte (20-60), tu es à la retraite (+60)
@@ -103,8 +104,9 @@ switch(panier){
 //selon le choix de l'utilisateur on lui dira si bleu = tu es de bonne humeur/ si jaune = humeur moyenne, si rouge = mauvaise humeur. 
 
 
-let couleurBis = prompt("Choississez une couleur entre bleu, jaune et rouge")
-couleurBis=couleurBis.toLocaleLowerCase()
+//let couleurBis = prompt("Choississez une couleur entre bleu, jaune et rouge")
+let couleurBis = "rouge";
+couleurBis=couleurBis.toLowerCase()
 
 switch(couleurBis){
     case"bleu":
@@ -119,3 +121,11 @@ switch(couleurBis){
     default :
         console.log("Veuillez choisir une couleur parmi la liste proposée")
 }
+
+//OPERATEUR TERNAIRE
+
+let message=(age>=18)?"Majeur":"Mineur";
+console.log(message);
+
+
+

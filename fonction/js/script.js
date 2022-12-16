@@ -33,15 +33,21 @@ saluerQuqunDeux("Bob", "moranne");
 //function avec valeur de retour
 
 function addition(nbr1,nbr2,nbr3){
-    
+    if(arguments.length==2){
+        return nbr1+nbr2;
+    }
+    else if(arguments.length==3){
+        return nbr1+nbr2+nbr3;
+    }
+}
+console.log(addition(2,2));
+console.log(addition(2,2,2));
 
-};
 
 //exo
 
 let prenomExo = "Gilette";
 let ageExo = "45 ans";
-
 
 function bonjour(pren,age){
     console.log("Bonjour M/Mme "+pren+" vous avez "+age+" ; félicitations !")
