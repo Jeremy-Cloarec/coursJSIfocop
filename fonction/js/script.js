@@ -25,10 +25,10 @@ saluerQuqun("Tony")//remplace l'argument
 
 //pas de rapport entre le paramètre et l'argument
 
-function saluerQuqunDeux(n,f){
-    console.log("Salut "+n +" "+f);
+function saluerQuqunDeux(l,f){
+    console.log("Salut "+l +" "+f);
 }
-saluerQuqunDeux("Bob", "moranne");
+saluerQuqunDeux("Bob", "Moranne");
 
 //function avec valeur de retour
 
@@ -40,7 +40,8 @@ function addition(nbr1,nbr2,nbr3){
         return nbr1+nbr2+nbr3;
     }
 }
-console.log(addition(2,2));
+
+console.log(addition(2,3));
 console.log(addition(2,2,2));
 
 

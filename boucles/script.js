@@ -22,7 +22,7 @@ for (let i = 1;i<=30;i++){
 // table de multiplication de 2
 
 // let choixTable = prompt("Choisissez votre table")
-let choixTable = 2
+let choixTable = 3
 
 if (isNaN(choixTable)){
     console.log("Choisissez un nombre !")
@@ -51,14 +51,14 @@ let compteur = 0;//on initialise le compteur à l'extérieur de la boucle
 while(compteur<10) {
     //ici on teste compteur : est ce qu'il est plus petit que 10. Si compteur est plus petit que 10, alors on execute les instructions. 
 
-    if(compteur>5 && compteur<8)
+    if(compteur>4 && compteur<8)
     console.log(compteur);
     compteur ++ ;
 }
 
 // do while
 
-let compteur2=10;
+let compteur2=5;
 do{
     console.log(compteur2)
     compteur2++;

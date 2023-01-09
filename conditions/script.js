@@ -6,7 +6,7 @@
 //syntax : 
 //if(condition){instruction}
 
-let age=17
+let age=16
 if (age>=18){
     console.log("Bienvenue dans la boite")
 }else{
@@ -18,7 +18,7 @@ if (age>=18){
 //pour tester une égalité on utilise deux signes égales
 //pour tester une égalité stricte on utilise trois signes égales. 
 
-let couleur = "rouge"
+let couleur = "bleu"
 if (couleur=="rouge"){
     console.log("Vous avez choisi le rouge")
 } else if (couleur =="jaune"){
@@ -34,7 +34,7 @@ if (couleur=="rouge"){
 
 //let nomPrompt = prompt("Quel est votre nom?");
 //let agePrompt = prompt("Quel âge avez-vous");
-let agePrompt = 16
+let agePrompt = 18
 let nomPrompt = "Claude"
 if (agePrompt<18) {
     console.log("Bonjour "+nomPrompt+", vous ne pouvez pas entrer car vous avez "+agePrompt+" ans");
