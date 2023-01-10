@@ -36,3 +36,6 @@ for (let i = 0; i < tableauFruit.length; i++){
 
 
 
+
+
+

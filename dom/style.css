@@ -5,25 +5,30 @@
 body{
     background-color: rgb(6, 8, 20);
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    
+    color: white; 
 }
+
 a{
     color: white;
     text-decoration: none;
 }
+
 .container{
     padding : 0 20px;
 }
+
 header{
     background-image: url(img/hd-wallpaper-g4a49e4585_1280.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    height:200px;
+    height:400px;
+    padding: 50px 15px 0;
+}
 
+header h1{
+    margin-top: 150px;
 }
     
 nav{
@@ -44,4 +49,6 @@ h2{
     margin:20px 0;
 }
 
-
+button a{
+    color:rgb(6, 8, 20) ;
+}
