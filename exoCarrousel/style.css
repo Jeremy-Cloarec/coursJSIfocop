@@ -1,0 +1,27 @@
+.carrousel{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+}
+
+
+.fleche{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.flecheGauche, .flecheDroite{
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+}
+
+.containerImage{
+   
+}
+
+.containerImage img{
+    width: 100%;
+}
