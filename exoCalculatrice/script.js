@@ -1,5 +1,3 @@
-//préciser qu'on ne peut pas diviser par 0
-
 //Créer des variables pour récupérer les nombres des input 1 et 2
 
 //Créer une variable pour récupérer la string du select. 
@@ -16,11 +14,11 @@
 
 //afficher le résultat de l'opération dan l'input 3
 
+//préciser qu'on ne peut pas diviser par 0
 
 
 
-// let nombreUn = document.querySelector(".nombreUn").value;
-// let nombreDeux= document.querySelector('.nombreDeux').value;
+
 
 
 
@@ -33,11 +31,31 @@ function calcul(){
 
     let nombreUn = parseInt(document.querySelector(".nombreUn").value);
     let nombreDeux= parseInt(document.querySelector('.nombreDeux').value);
+    let operationSelect= document.querySelector('#operationSelect').value;
 
-    let operation = nombreUn + nombreDeux;
-    console.log(operation)
+   
+
+
+    console.log(result)
+
+    
+
+    console.log(operationSelect)
+
+    
+    if (operationSelect=="plus"){
+        document.querySelector('#result').value = nombreUn+nombreDeux;
+
+    }else if (operationSelect=="moins"){
+        document.querySelector('#result').value =nombreUn-nombreDeux;
+
+    }else if (operationSelect=="diviser"){
+        document.querySelector('#result').value =nombreUn/nombreDeux;
+    }else if (operationSelect=="multiplier"){
+        document.querySelector('#result').value =nombreUn*nombreDeux;
+    }
+
 }
-
 
 submitOperation.addEventListener('click',calcul)
 
