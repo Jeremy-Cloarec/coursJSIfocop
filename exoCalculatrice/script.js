@@ -25,16 +25,11 @@
 let submitOperation = document.querySelector('.submitOperation')
 
 
-
-
 function calcul(){
 
     let nombreUn = parseInt(document.querySelector(".nombreUn").value);
     let nombreDeux= parseInt(document.querySelector('.nombreDeux').value);
     let operationSelect= document.querySelector('#operationSelect').value;
-
-   
-
 
     console.log(result)
 
@@ -49,6 +44,8 @@ function calcul(){
     }else if (operationSelect=="moins"){
         document.querySelector('#result').value =nombreUn-nombreDeux;
 
+    }else if (operationSelect=="diviser"&&nombreDeux=='0'){
+        alert("Veuillez choissir un nombre différent de 0");
     }else if (operationSelect=="diviser"){
         document.querySelector('#result').value =nombreUn/nombreDeux;
     }else if (operationSelect=="multiplier"){
@@ -58,18 +55,4 @@ function calcul(){
 }
 
 submitOperation.addEventListener('click',calcul)
-
-
-
-
-
-
-
-
-
-
-
-// console.log(nombreUn)
-// console.log(nombreDeux)
-
 

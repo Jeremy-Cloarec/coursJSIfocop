@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+body{
+    background-color: rgb(197, 197, 197);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.calculatrice{
+    display:grid;
+    grid-template-columns:repeat(1,1fr);
+    gap:8px;
+    background-color: rgb(58, 47, 47);
+    width: 270px;
+    margin: auto;
+    margin-top: 45px;
+    padding: 20px 35px 30px 15px;
+    border-radius: 15px;
+    box-shadow: -15px -15px 4px inset  rgba(0, 0, 0, 0.466);
+}
+
+.ecran{
+    background-color: rgb(241, 241, 241);
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgba(56, 56, 56, 0.527);
+    box-shadow: -5px -5px 4px inset rgba(15, 15, 12, 0.212);
+}
+
+.touches{
+    display: grid;
+    grid-template-columns:repeat(4,1fr) ;
+    gap:8px;
+}
+
+
+.touches .button{
+    background-color: rgb(241, 241, 241);
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -5px -5px 2px inset rgba(15, 15, 12, 0.212);
+    cursor: pointer;
+}
+
+.touches .button:hover{
+    background-color: rgb(243, 232, 232);
+}
+
+.touches button:last-child{
+    background-color: rgb(207, 163, 212);
+    grid-column:span 2;
+}
+
+
+.touches button:last-child:hover{
+    background-color: rgb(236, 191, 241);
+}
+
+
+.touches button:first-child{
+    background-color: rgb(207, 163, 212);
+}
+.touches button:first-child:hover{
+    background-color: rgb(236, 191, 241);
+}
+
+
+
+
+
+
+
+
+
