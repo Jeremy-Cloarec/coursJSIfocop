@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logique JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Javascript</h1>
+        <p>Dans ce fichier ,vous trouverez une petite serie d exercice</p>
+        <p>Prenez bien le temps de lire les ennoncés car si vous devez avoir des contraintes elles sauront specifiées dedans </p>
+    </header>
+    <main>
+        <section>
+            <!-- <h2>Exercice 1(Variable,Concatenation,fonction,Affichage)</h2> -->
+            <p>Recuperer le nom et le prenom d'un utilisateur pour ensuite lui afficher un message de bienvenue dans le paragraphes vide ci-dessous</p>
+            <div>
+                <label for="prenom">Votre prénom</label>
+                <input type="text" id="prenom" placeholder="Votre prénom" value="">
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" placeholder="Votre nom">
+                <button class="valider">Valider</button>
+                <p class="bienvenue"></p>
+            </div>
+        </section>
+        <section>
+            <h2>Exercice 2(Variable,fonction)</h2>
+            <p>L'utilisateur de l exercice 1 va ensuite selectionner une quantite pour un produit calculer la sommes qu il devra payer et lui afficher dans un message(l operation souhaiter sera : la quantite de l utilisateur multiplier par le prix a l uniter plus la TVA)</p>
+            <div>
+                <p>Produit</p>
+                <select name="" id="quantiter">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <p>Prix a l'unité : 86.40&euro;</p>
+                <p>T.V.A : 20.6%</p>
+                <button class="selectionQuantite">Valider</button>
+                <p id="totalUtilisateur"></p>
+            </div>
+        </section>
+        <section>
+            <h2>Exercice 3</h2>
+            <p>Vous passer un entretien ; on vous donne cela a faire en test technique </p>
+            <p>Fichier JS vous devez creer un tableau contenant plusieurs choix de couleurs (5minimum);afficher dans les balises le choix des couleurs suite a un click sur celle ci la couleur de notre site se modifiera en direct(pour cette exercice il faut utiliser une boucle ainsi que des conditions)</p>
+            <div class="boiteContenantCouleur">
+                <div class="boiteContenantCouleurPosition">
+                    <h3>Body</h3>
+                    <div class="couleur" id="couleur1"></div>
+                    <div class="couleur" id="couleur2"></div>
+                    <div class="couleur" id="couleur3"></div>
+                    <div class="couleur" id="couleur4"></div>
+                    <div class="couleur" id="couleur5"></div>
+                    <div>
+                        <input type="color" id="bodyCouleur">
+                        <button class="bodyValid">valider</button>
+                    </div>
+                </div>
+                <div class="boiteContenantCouleurPosition">
+                    <h3>Texte</h3>
+                    <div class="couleurT" id="couleur1Bis"></div>
+                    <div class="couleurT" id="couleur2Bis"></div>
+                    <div class="couleurT" id="couleur3Bis"></div>
+                    <div class="couleurT" id="couleur4Bis"></div>
+                    <div class="couleurT" id="couleur5Bis"></div>
+                    <div>
+                        <input type="color" id="textCouleur">
+                        <button class="textValid">valider</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Exercice 4</h2>
+            <p>Debugguer ce Slider </p>
+            <!-- <div>
+                <img id="carousel" src='imgCarousel/a.jpg' alt="">
+            </div> -->
+
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

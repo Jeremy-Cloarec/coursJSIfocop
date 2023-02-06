@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: bisque;
+    height: 100vh;
+}
+header{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 60%;
+    justify-content: space-around;
+}
+section{
+    text-align: center;
+    border: 2px solid;
+    width: 45%;
+    min-height: 50vh;
+    margin-bottom: 5%;
+}
+h2{
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+.boiteContenantCouleur{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.boiteContenantCouleurPosition{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.couleur{
+    border: 2px solid;
+    width: 100%;
+    min-height: 35px;
+    background-color: darkcyan;
+}
+.couleurT{
+    border: 2px solid;
+    width: 100%;
+    min-height: 35px;
+    background-color: darkcyan;
+}
+
+
+img{
+    width: 350px;
+    height: 200px;
+}

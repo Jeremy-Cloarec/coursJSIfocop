@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objets</title>
+    <script>
+        console.log("coucou");
+
+        //On affect à l'objet plusieurs pptés
+        //pptés : ce que l'objet connapit
+        
+
+        let chien = {
+            race :'berger allemand',
+            poil :'court',
+
+        //méthode : ce que l'objet sait faire, sous forme de fonction
+
+            aboyer:()=>{
+                console.log("ouaf");
+            },
+
+            jouer:()=>{
+                console.log("Ramène la balle ! ");
+            }
+
+        }
+
+        chien.aboyer();
+        chien.jouer();
+        
+        //objet fonction prototypal
+
+        function Player(nom, score){
+            this.nom=nom; //this sert à pointer sur l'objet lui-même. This = Player
+            this.score=score;
+
+            this.afficher=()=>{
+                console.log( `nom : ${this.nom} et le score : ${this.score}`);
+            }
+        }
+
+        //utilisation
+        let player1 =new Player ("Bob", 15);
+        player1.afficher();
+
+        //
+        // player1.prototype.pseudo='Bobby'; 
+        //rajoute des propriétés à la volée. On peut aussi rajouter des méthodes
+
+        // class PlayerTwo {
+        //     constructor (props){
+        //         this.nom=props.nom;
+        //         this.score=props.score;
+        //     }
+        //     display(){
+        //         return(`Nom : ${props.nom} score : ${props.score}`)
+        //     }
+        // }
+
+        // getScore(){
+        //     return props.score;
+        // }
+        // setScore(){
+        //     props.score=score; 
+        // }
+
+        // getNom(){
+        //     return props.nom;
+        // }
+        
+        // setNom(){
+        //     props.nom=nom;
+        // }
+
+        class PlayerTwo {
+
+            constructor (nom, score){
+                this.nom=nom;
+                this.score=score;
+            }
+            display(){
+                return(`Nom : ${this.nom} score : ${this.score}`)
+            }
+
+            getScore(){
+                return this.score;
+            }
+
+            setScore(){
+                props.this=score; 
+            }
+
+            getNom(){
+                return this.nom;
+            }
+            
+            setNom(){
+                props.this=nom;
+            }
+        }
+        
+        
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
