@@ -1,6 +1,33 @@
 body{
     text-align: center;
+<<<<<<< HEAD
 }
 input{
     text-align: center;
+=======
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.parentInput{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    flex-wrap: wrap;
+   
+
+   
+}
+
+input{
+    text-align: center;
+    width: 50px;
+    margin:5px 5px;
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+input:focus{
+    outline: none;
+>>>>>>> 89fb69ae849b60607d56e8524191b78c545c75f7
 }
